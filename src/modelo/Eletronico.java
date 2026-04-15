@@ -13,6 +13,6 @@ public class Eletronico extends Produto{
 
     @Override
     public String toString() {
-        return "Eletronico{nome=" + getNome() + ", codigo=" + getCodigo() + ", Serial Number=" + serialNumber + ", tipo=" + tipo + '}';
+        return "Eletronico{nome=" + getNome() + ", codigo=" + getCodigo() + ", Serial Number=" + serialNumber + ", tipo=" + tipo +  ", Quantidade em estoque=" + getQuantidadeEstoque() + "}" ;
     }
 }

@@ -1,7 +1,6 @@
 package principal;
 
 import modelo.Eletronico;
-import modelo.Produto;
 import servico.GerenciadorEstoque;
 
 public class Main {
@@ -11,6 +10,9 @@ public class Main {
         Eletronico meuCelular = new Eletronico("Celular",1, 1002.0, 2, "123456", "Aparelho");
 
         estoque.adicionarProduto(meuCelular);
+        estoque.listarProdutos();
+
+        estoque.atualizarQuantidade(1,10);
         estoque.listarProdutos();
 
 

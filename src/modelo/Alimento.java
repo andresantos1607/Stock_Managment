@@ -13,4 +13,9 @@ public class Alimento extends Produto {
         this.dataDeValidade = dataDeValidade;
         this.isPerecivel = isPerecivel;
     }
+
+    @Override
+    public String toString() {
+        return "Alimento {nome= " + getNome() + ", codigo= " + getCodigo() + ", data de validade= " + dataDeValidade + ", É perecível= " + isPerecivel + '}';
+    }
 }

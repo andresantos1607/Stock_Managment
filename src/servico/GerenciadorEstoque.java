@@ -21,12 +21,12 @@ public class GerenciadorEstoque {
         return null;
     }
 
-    public void removerProduto(int codigo, int novaQuantidade){
+    public void atualizarQuantidade(int codigo, int novaQuantidade){
         Produto  produtoEncontrado = buscarProduto(codigo);
 
         if (produtoEncontrado != null){
             produtoEncontrado.setQuantidadeEstoque(novaQuantidade);
-            System.out.println("Produto removido com sucesso");
+            System.out.println("Produto atualizado com sucesso");
         } else{
             System.out.println("Produto não encotrado");
         }
