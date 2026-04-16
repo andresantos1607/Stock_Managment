@@ -1,6 +1,6 @@
-package servico;
+package br.com.alura.servico;
 
-import modelo.Produto;
+import br.com.alura.modelo.Produto;
 
 import java.util.ArrayList;
 
@@ -31,6 +31,15 @@ public class GerenciadorEstoque {
             System.out.println("Produto não encotrado");
         }
 
+    }
+    public  void removerProduto(int codigo){
+        Produto  produtoEncontrado = buscarProduto(codigo);
+
+        if (produtoEncontrado != null){
+            lista.remove(produtoEncontrado);
+        }  else{
+            System.out.println("Produto não encontrado");
+        }
     }
 
     public void listarProdutos(){

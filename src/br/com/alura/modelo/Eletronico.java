@@ -1,4 +1,4 @@
-package modelo;
+package br.com.alura.modelo;
 
 public class Eletronico extends Produto{
 

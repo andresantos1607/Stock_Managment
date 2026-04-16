@@ -1,4 +1,4 @@
-package modelo;
+package br.com.alura.modelo;
 
 public abstract class Produto {
     private String nome;

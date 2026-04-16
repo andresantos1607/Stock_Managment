@@ -1,6 +1,4 @@
-package modelo;
-
-import java.time.LocalDate;
+package br.com.alura.modelo;
 
 public class Alimento extends Produto {
 
